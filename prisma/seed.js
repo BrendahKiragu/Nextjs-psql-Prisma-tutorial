@@ -9,9 +9,26 @@ async function main() {
   // Seed data for Category model
   await prisma.categories.createMany({
     data: [
-      { category_name: "Electronics", description: "Devices and gadgets" },
-      { category_name: "Books", description: "Various genres of books" },
-      { category_name: "Clothing", description: "Apparel and accessories" },
+      {
+        category_name: "Best Actress",
+        description: "Award for the best female performance in a lead role.",
+      },
+      {
+        category_name: "Best Director",
+        description: "Award for the best direction of a film.",
+      },
+      {
+        category_name: "Best Picture",
+        description: "Award for the best overall film of the year.",
+      },
+      {
+        category_name: "Best Cinematography",
+        description: "Award for the best visual composition of a film.",
+      },
+      {
+        category_name: "Best Original Screenplay",
+        description: "Award for the best original written screenplay.",
+      },
     ],
   });
 
