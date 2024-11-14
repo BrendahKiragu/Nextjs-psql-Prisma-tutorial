@@ -1,5 +1,5 @@
 import prisma from "@/lib/prisma";
-// Handles GET (all categories) and POST (create category)
+// Handles GET (all categories) and POST (create category) http://localhost:3000/api/category
 
 export default async function handler(req, res) {
   //GET all categories

@@ -1,5 +1,6 @@
 import prisma from "@/lib/prisma";
 
+//handles GET, PUT, and DELETE a category by ID http://localhost:3000/api/category/1
 export default async function handler(req, res) {
   const category_id = req.query.id; // Get the category ID from the query parameter
 
